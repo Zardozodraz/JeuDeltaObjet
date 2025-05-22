@@ -5,7 +5,7 @@ class Module():
 class Shield(Module):
     def __init__(self, vaisseau):
         self.nom = "Shield"
-        self.effet = vaisseau.shield * 0.20 # 2+0% au bouclier du vaisseau
+        self.effet = vaisseau.shield * 0.20 # +20% au bouclier du vaisseau
         self.prix = vaisseau.prix * 1.5 # 150% du prix du vaisseau
         self.compatible = "MicroDelta MiliDelta DecaDelta MegaDelta GigaDelta"
     

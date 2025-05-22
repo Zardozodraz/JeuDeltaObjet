@@ -43,13 +43,14 @@ class Vaisseau():
 ####################################################################################
 
 class MicroDelta(Vaisseau):
-    def __init__(self, id, position):
+    def __init__(self, id, position, camp):
         self.id = id
         self.modele = "MicroDelta"
         self.prix = 500
+        self.camp = camp # str "Ami" ou "Ennemi"
         
         self.vie = 30
-        self.shield = 100
+        self.shield = 0
         self.speed = 100
         self.Maniabilite = 1_000
         self.visee = 1_000
@@ -62,17 +63,19 @@ class MicroDelta(Vaisseau):
         
         self.position = position # (x, y)
         self.angle = 0
+        self.image = f"../images/imagesVaisseaux/{self.camp}/MicroDelta.png"
         
-        modifier = ""
+        self.modifier = ""
 
 class MiliDelta(Vaisseau):
-    def __init__(self, id, position):
+    def __init__(self, id, position, camp):
         self.id = id
         self.modele = "MiliDelta"
         self.prix = 1_000
+        self.camp = camp # str "Ami" ou "Ennemi"
         
         self.vie = 70
-        self.shield = 100
+        self.shield = 10
         self.Maniabilite = 900
         self.speed = 80
         self.visee = 1_000
@@ -85,17 +88,19 @@ class MiliDelta(Vaisseau):
         
         self.position = position # (x, y)
         self.angle = 0
+        self.image = f"../images/imagesVaiseaux/{self.camp}/MiliDelta.png"
         
-        modifier = ""
+        self.modifier = ""
         
 class DecaDelta(Vaisseau):
-    def __init__(self, id, position):
+    def __init__(self, id, position, camp):
         self.id = id
         self.modele = "DecaDelta"
         self.prix = 2_500
+        self.camp = camp # str "Ami" ou "Ennemi"
         
         self.vie = 150
-        self.shield = 100
+        self.shield = 30
         self.Maniabilite = 800
         self.speed = 70
         self.visee = 1_000
@@ -108,17 +113,19 @@ class DecaDelta(Vaisseau):
         
         self.position = position # (x, y)
         self.angle = 0
+        self.image = f"../images/imagesVaiseaux/{self.camp}/DecaDelta.png"
         
-        modifier = ""
+        self.modifier = ""
 
 class MegaDelta(Vaisseau):
-    def __init__(self, id, position):
+    def __init__(self, id, position, camp):
         self.id = id
         self.modele = "MegaDelta"
         self.prix = 5_000
+        self.camp = camp # str "Ami" ou "Ennemi"
         
         self.vie = 300
-        self.shield = 100
+        self.shield = 80
         self.Maniabilite = 700
         self.speed = 60
         self.visee = 1_000
@@ -131,14 +138,16 @@ class MegaDelta(Vaisseau):
         
         self.position = position # (x, y)
         self.angle = 0
+        self.image = f"../images/imagesVaiseaux/{self.camp}/MegaDelta.png"
         
-        modifier = ""
+        self.modifier = ""
     
 class GigaDelta(Vaisseau):
-    def __init__(self, id, position):
+    def __init__(self, id, position, camp):
         self.id = id
         self.modele = "GigaDelta"
         self.prix = 10_000
+        self.camp = camp # str "Ami" ou "Ennemi"
         
         self.vie = 500
         self.shield = 100
@@ -154,5 +163,6 @@ class GigaDelta(Vaisseau):
         
         self.position = position # (x, y)
         self.angle = 0
+        self.image = f"../images/imagesVaiseaux/{self.camp}/GigaDelta.png"
         
-        modifier = ""
+        self.modifier = ""
