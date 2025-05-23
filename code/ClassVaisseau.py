@@ -88,7 +88,7 @@ class MiliDelta(Vaisseau):
         
         self.position = position # (x, y)
         self.angle = 0
-        self.image = f"../images/imagesVaiseaux/{self.camp}/MiliDelta.png"
+        self.image = f"../images/imagesVaisseaux/{self.camp}/MiliDelta.png"
         
         self.modifier = ""
         
@@ -113,7 +113,7 @@ class DecaDelta(Vaisseau):
         
         self.position = position # (x, y)
         self.angle = 0
-        self.image = f"../images/imagesVaiseaux/{self.camp}/DecaDelta.png"
+        self.image = f"../images/imagesVaisseaux/{self.camp}/DecaDelta.png"
         
         self.modifier = ""
 
@@ -138,7 +138,7 @@ class MegaDelta(Vaisseau):
         
         self.position = position # (x, y)
         self.angle = 0
-        self.image = f"../images/imagesVaiseaux/{self.camp}/MegaDelta.png"
+        self.image = f"../images/imagesVaisseaux/{self.camp}/MegaDelta.png"
         
         self.modifier = ""
     
@@ -163,6 +163,6 @@ class GigaDelta(Vaisseau):
         
         self.position = position # (x, y)
         self.angle = 0
-        self.image = f"../images/imagesVaiseaux/{self.camp}/GigaDelta.png"
+        self.image = f"../images/imagesVaisseaux/{self.camp}/GigaDelta.png"
         
         self.modifier = ""
